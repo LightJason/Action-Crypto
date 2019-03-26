@@ -21,7 +21,7 @@
  * @endcond
  */
 
-package org.lightjason.agentspeak.action;
+package org.lightjason.agentspeak.action.crypto;
 
 import com.codepoetics.protonpack.StreamUtils;
 import com.tngtech.java.junit.dataprovider.DataProvider;
@@ -34,11 +34,6 @@ import org.apache.commons.lang3.tuple.Triple;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.lightjason.agentspeak.action.crypto.CCreateKey;
-import org.lightjason.agentspeak.action.crypto.CDecrypt;
-import org.lightjason.agentspeak.action.crypto.CEncrypt;
-import org.lightjason.agentspeak.action.crypto.CHash;
-import org.lightjason.agentspeak.action.crypto.ECryptAlgorithm;
 import org.lightjason.agentspeak.error.context.CExecutionException;
 import org.lightjason.agentspeak.error.context.CExecutionIllegalStateException;
 import org.lightjason.agentspeak.error.context.CExecutionIllegealArgumentException;
