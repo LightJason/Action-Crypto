@@ -31,7 +31,7 @@
     <!-- project meta information -->
     <name>LightJason AgentSpeak(L++) - Crypto Action</name>
     <description>AgentSpeak(L++) action for cryptographic structure</description>
-    <url>https://github.com/LightJason/AgentSpeak</url>
+    <url>https://github.com/LightJason/Java-Action-Crypto</url>
     
     <organization>
         <name>LightJason</name>
@@ -47,13 +47,13 @@
     
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/LightJason/Action-Crypto/issues</url>
+        <url>https://github.com/LightJason/Java-Action-Crypto/issues</url>
     </issueManagement>
     
     <scm>
-        <url>https://github.com/LightJason/Action-Crypto</url>
-        <connection>scm:git:git://github.com:LightJason/Action-Crypto.git</connection>
-        <developerConnection>scm:git:git@github.com:LightJason/Action-Crypto.git</developerConnection>
+        <url>https://github.com/LightJason/Java-Action-Crypto</url>
+        <connection>scm:git:git://github.com:LightJason/Java-Action-Crypto.git</connection>
+        <developerConnection>scm:git:git@github.com:LightJason/Java-Action-Crypto.git</developerConnection>
         <tag>v0.0.1</tag>
     </scm>
     
