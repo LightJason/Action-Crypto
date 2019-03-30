@@ -1,4 +1,3 @@
-
 [submodule "src/codestyle"]
 	path = src/codestyle
 	url = git@github.com:LightJason/Java-CodeStyle.git
