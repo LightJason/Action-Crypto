@@ -46,28 +46,28 @@
  */
 +!testhash <-
     HashMD5 = .crypto/hash( "md5", "hello agentspeak" );
-    .generic/print( "MD5 Hash", HashMD5 );
-    .test/result( .bool/equal( HashMD5, "55fd98e633aa50e8b0072d76121bdfed" ), "MD5 hash has been failed");
+    .test/print( "MD5 Hash", HashMD5 );
+    .test/result( .test/equal( HashMD5, "55fd98e633aa50e8b0072d76121bdfed" ), "MD5 hash has been failed");
 
 
     HashMurmur = .crypto/hash( "murmur3-32", "hello agentspeak" );
-    .generic/print( "Murmur Hash", HashMurmur );
-    .test/result( .bool/equal( HashMurmur, "99ca3b53" ), "Murmur hash has been failed");
+    .test/print( "Murmur Hash", HashMurmur );
+    .test/result( .test/equal( HashMurmur, "99ca3b53" ), "Murmur hash has been failed");
 
 
     HashAdler = .crypto/hash( "adler-32", "hello agentspeak" );
-    .generic/print( "Adler Hash", HashAdler );
-    .test/result( .bool/equal( HashAdler, "58061935" ), "Adler hash has been failed" );
+    .test/print( "Adler Hash", HashAdler );
+    .test/result( .test/equal( HashAdler, "58061935" ), "Adler hash has been failed" );
 
 
     HashCrc = .crypto/hash( "crc-32", "hello agentspeak" );
-    .generic/print( "CRC Hash", HashCrc );
-    .test/result( .bool/equal( HashCrc, "1727aad1" ), "CRC hash has been failed" );
+    .test/print( "CRC Hash", HashCrc );
+    .test/result( .test/equal( HashCrc, "1727aad1" ), "CRC hash has been failed" );
 
 
     HashSHA = .crypto/hash( "sha-256", "string test1" );
-    .generic/print( "SHA Hash", HashSHA );
-    .test/result( .bool/equal( HashSHA, "4234378fcbc448966ea91ed85de19dc9fc176719ed09fe82d1b1ee671c176ad3" ), "SHA-256 hash has been failed" )
+    .test/print( "SHA Hash", HashSHA );
+    .test/result( .test/equal( HashSHA, "4234378fcbc448966ea91ed85de19dc9fc176719ed09fe82d1b1ee671c176ad3" ), "SHA-256 hash has been failed" )
 .
 
 
@@ -79,7 +79,7 @@
     DESEncrypt = .crypto/encrypt( DESKey, "DES uncrypted message");
     DESDecrypt = .crypto/decrypt( DESKey, DESEncrypt);
 
-    .generic/print( "crypto des", DESEncrypt, DESDecrypt );
+    .test/print( "crypto des", DESEncrypt, DESDecrypt );
     .test/result( success )
 .
 
@@ -92,7 +92,7 @@
     AESEncrypt = .crypto/encrypt( AESKey, "AES uncrypted message");
     AESDecrypt = .crypto/decrypt( AESKey, AESEncrypt);
 
-    .generic/print( "crypto aes", AESEncrypt, AESDecrypt );
+    .test/print( "crypto aes", AESEncrypt, AESDecrypt );
     .test/result( success )
 .
 
@@ -113,9 +113,9 @@
     Decrypt1to2 = .crypto/decrypt( PrivateKey2, Encrypt1to2 );
     Decrypt2to1 = .crypto/decrypt( PrivateKey1, Encrypt2to1 );
 
-    .generic/print("crypto rsa 1 to 2", Encrypt1to2, Decrypt1to2 );
-    .generic/print("crypto rsa 2 to 1", Encrypt2to1, Decrypt2to1 );
+    .test/print("crypto rsa 1 to 2", Encrypt1to2, Decrypt1to2 );
+    .test/print("crypto rsa 2 to 1", Encrypt2to1, Decrypt2to1 );
 
-    .test/result( .bool/equal( Decrypt1to2, Message1to2 ), "RSA has been failed on the first message" );
-    .test/result( .bool/equal( Decrypt2to1, Message2to1 ), "RSA has been failed on the second message" )
+    .test/result( .test/equal( Decrypt1to2, Message1to2 ), "RSA has been failed on the first message" );
+    .test/result( .test/equal( Decrypt2to1, Message2to1 ), "RSA has been failed on the second message" )
 .
