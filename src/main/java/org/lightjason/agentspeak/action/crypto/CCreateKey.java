@@ -91,7 +91,7 @@ public final class CCreateKey extends IBaseAction
             if ( Objects.nonNull( l_key.getRight() ) )
                 p_return.add( CRawTerm.of( l_key.getRight() ) );
 
-            return Stream.of();
+            return Stream.empty();
         }
         catch ( final NoSuchAlgorithmException | IllegalArgumentException l_exception )
         {

@@ -103,7 +103,7 @@ public final class CEncrypt extends IBaseAction
                .map( ITerm::<Serializable>raw )
                .forEach( i -> encrypt( l_algorithm, l_key, i, p_return, p_context ) );
 
-        return Stream.of();
+        return Stream.empty();
     }
 
 

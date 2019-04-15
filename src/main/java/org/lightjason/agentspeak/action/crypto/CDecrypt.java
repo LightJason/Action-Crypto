@@ -101,7 +101,7 @@ public final class CDecrypt extends IBaseAction
         CCommon.flatten( p_argument.stream().skip( 1 ) )
                .map( ITerm::<String>raw )
                .forEach( i -> decrypt( l_algorithm, l_key, i, p_return, p_context ) );
-        return Stream.of();
+        return Stream.empty();
     }
 
     /**
