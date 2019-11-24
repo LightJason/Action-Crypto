@@ -53,15 +53,15 @@ import java.util.stream.Stream;
  *
  * {@code [Hash1 | Hash2 | Hash3] = .crypto/hash( "Adler-32 | CRC-32 | CRC-32C | ...", Dataset1, Dataset2, Dataset3 );}
  *
- * @see https://en.wikipedia.org/wiki/Secure_Hash_Algorithm
- * @see https://en.wikipedia.org/wiki/MD2_(cryptography)
- * @see https://en.wikipedia.org/wiki/MD5
- * @see https://en.wikipedia.org/wiki/Adler-32
- * @see https://en.wikipedia.org/wiki/Cyclic_redundancy_check
- * @see https://en.wikipedia.org/wiki/MurmurHash
- * @see https://en.wikipedia.org/wiki/SipHash
- * @see http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#MessageDigest
- * @see https://github.com/google/guava/wiki/HashingExplained
+ * @see <a href="https://en.wikipedia.org/wiki/Secure_Hash_Algorithm"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/MD2_(cryptography)"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/MD5"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/Adler-32"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/MurmurHash"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/SipHash"></a>
+ * @see <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#MessageDigest"></a>
+ * @see <a href="https://github.com/google/guava/wiki/HashingExplained"></a>
  */
 public final class CHash extends IBaseAction
 {

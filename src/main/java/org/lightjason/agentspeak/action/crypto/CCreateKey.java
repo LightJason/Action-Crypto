@@ -48,9 +48,9 @@ import java.util.stream.Stream;
  *
  * {@code [PublicKey, PrivateKey] = .cypto/createkey( "AES | DES | RSA" );}
  *
- * @see https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
- * @see https://en.wikipedia.org/wiki/Data_Encryption_Standard
- * @see https://en.wikipedia.org/wiki/RSA_(cryptosystem)
+ * @see <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/Data_Encryption_Standard"></a>
+ * @see <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)"></a>
  */
 public final class CCreateKey extends IBaseAction
 {
