@@ -1,6 +1,5 @@
 *.*
 
-!CNAME
 !.gitignore
 !.gitmodules
 !circle.yml
